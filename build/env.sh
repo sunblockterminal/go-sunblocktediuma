@@ -10,7 +10,7 @@ fi
 # Create fake Go workspace if it doesn't exist yet.
 workspace="$PWD/build/_workspace"
 root="$PWD"
-ethdir="$workspace/src/github.com/sunblocktediumchain"
+ethdir="$workspace/src/github.com/sunblockterminal"
 if [ ! -L "$ethdir/go-sunblocktediuma" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"

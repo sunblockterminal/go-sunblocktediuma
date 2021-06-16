@@ -21,7 +21,7 @@ Section "Uninstall"
   SimpleFC::AdvRemoveRule "Gsbt outgoing peers (TCP:33560)"
   SimpleFC::AdvRemoveRule "Gsbt UDP discovery (UDP:33560)"
 
-  # Remove IPC endpoint (https://github.com/sunblocktediumchain/EIPs/issues/147)
+  # Remove IPC endpoint (https://github.com/sunblockterminal/EIPs/issues/147)
   ${un.EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gsbt.ipc"
 
   # Remove install directory from PATH
